@@ -29,7 +29,6 @@ ul.navPanel li:last-child a {
 	border-bottom: none;
 }
 
-/* Change the link color on hover */
 ul.navPanel li a:hover {
 	background-color: #555;
 	color: white;
