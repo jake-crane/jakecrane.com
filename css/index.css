@@ -19,7 +19,7 @@ body {
 
 ul.navPanel li a {
 	display: block;
-	color: #000;
+	color: black;
 	padding: 8px 0 8px 16px;
 	text-decoration: none;
 	border-bottom: 1px solid #555;
@@ -33,5 +33,24 @@ ul.navPanel li a:hover {
 	background-color: #555;
 	color: white;
 	text-decoration: none;
+}
+
+#preview {
+	width: 700px;
+	height: 425px;
+	border-style: ridge;
+}
+
+.smallViewOnly {
+	display :none;
+}
+
+@media screen and (max-width: 480px) {
+	.largeViewOnly {
+		display: none;
+	}
+	.smallViewOnly {
+		display: block;
+	}
 }
 
