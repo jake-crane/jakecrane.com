@@ -10,9 +10,9 @@ body {
 
 .navPanel {
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
-	width: 200px;
+	width: 100%;
+	max-width: 200px;
 	background-color: #f1f1f1;
 	border: 1px solid #555;
 }
@@ -20,7 +20,7 @@ body {
 ul.navPanel li a {
 	display: block;
 	color: black;
-	padding: 8px 0 8px 16px;
+	padding: 8px 16px 8px 16px;
 	text-decoration: none;
 	border-bottom: 1px solid #555;
 }
@@ -35,17 +35,22 @@ ul.navPanel li a:hover {
 	text-decoration: none;
 }
 
+ul.navPanel li {
+	text-align: center;
+}
+
 #preview {
-	width: 700px;
-	height: 425px;
+	width: 100%;
+	max-width: 700px;
+	height: 420px;
 	border-style: ridge;
 }
 
 .smallViewOnly {
 	display :none;
 }
-
-@media screen and (max-width: 480px) {
+/*iframe is automatically moved below nav menu when width is < 768, so we want to hide it.*/
+@media screen and (max-width: 767px) {
 	.largeViewOnly {
 		display: none;
 	}
@@ -53,4 +58,3 @@ ul.navPanel li a:hover {
 		display: block;
 	}
 }
-
