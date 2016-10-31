@@ -45,16 +45,3 @@ ul.navPanel li {
 	height: 420px;
 	border-style: ridge;
 }
-
-.smallViewOnly {
-	display :none;
-}
-/*iframe is automatically moved below nav menu when width is < 768, so we want to hide it.*/
-@media screen and (max-width: 767px) {
-	.largeViewOnly {
-		display: none;
-	}
-	.smallViewOnly {
-		display: block;
-	}
-}
