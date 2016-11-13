@@ -40,8 +40,13 @@ ul.navPanel li {
 }
 
 #preview {
-	width: 100%;
-	max-width: 700px;
-	height: 420px;
+    height: 100%;
+    width: 100%;
 	border-style: ridge;
+}
+
+#previewContainer {
+    width: 100%;
+    max-width: 700px;
+    height: 420px;
 }
