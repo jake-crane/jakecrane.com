@@ -4,10 +4,12 @@ $(function () {
     const $previewContainer = $('#previewContainer');
     const $iframe = $('#preview');
 
+    hideIframe(0);
+
     $previewContainer.resizable();
 
-    function hideIframe() {
-        TweenMax.to($iframe, .5, {opacity: 0, scale: 0});
+    function hideIframe(duration) {
+        TweenMax.to($iframe, duration, {opacity: 0, scale: 0});
     }
 
     $liveExampleLinks.click(function () {
@@ -16,7 +18,7 @@ $(function () {
         } else {
             $(this).attr('target', '');
         }
-        hideIframe();
+        hideIframe(.5);
     });
 
     $iframe.load(function () {
