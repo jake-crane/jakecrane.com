@@ -13,20 +13,21 @@ body {
 	padding: 0;
 	width: 100%;
 	max-width: 200px;
-	background-color: #f1f1f1;
-	border: 1px solid #555;
 }
 
 ul.navPanel li a {
+	background-color: #f1f1f1;
 	display: block;
 	color: black;
 	padding: 8px 2px 8px 2px;
 	text-decoration: none;
-	border-bottom: 1px solid #555;
+	border-style:solid;
+	border-color: #555;
+	border-width: 0 1px 1px 1px;
 }
 
-ul.navPanel li:last-child a {
-	border-bottom: none;
+ul.navPanel li:first-child a {
+	border-top: 1px solid #555;
 }
 
 ul.navPanel li a:hover {
@@ -43,6 +44,7 @@ ul.navPanel li {
     height: 100%;
     width: 100%;
 	border-style: ridge;
+	opacity: 0;
 }
 
 #previewContainer {

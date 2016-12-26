@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./css/index.css"/>
     <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/thirdParty/jquery-ui.css">
-    <link rel="stylesheet" href="css/thirdParty/animate.css">
     <script src="js/thirdParty/jquery.min.js"></script>
     <script src="js/thirdParty/bootstrap.min.js"></script>
     <script src="js/thirdParty/jquery-ui.js"></script>
+    <script src="js/thirdParty/TweenMax.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
@@ -42,37 +42,31 @@
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <h3>Source Code</h3>
-            <ul class="navPanel">
-                <li><a href="https://github.com/jake-crane?tab=repositories">My Github Projects</a></li>
-                <li><a href="https://bitbucket.org/jake_crane">My Bitbucket Projects</a></li>
-            </ul>
-
-            <h3>Live Examples</h3>
-            <ul class="navPanel hidden-xs">
-                <li><a href="http://jakecrane.com/LemonadeCalculator/" target="preview">Lemonade Calculator</a></li>
-                <li><a href="http://jakecrane.com/PizzaCostCalculator/" target="preview">Pizza Cost Calculator</a></li>
-                <li><a href="http://jakecrane.com/DragAndDrop/" target="preview">Drag And Drop</a></li>
-                <li><a href="http://jakecrane.com/makeItRain/" target="preview">Make it Rain</a></li>
-                <li><a href="http://jakecrane.com/Breakout/" target="preview">Breakout</a></li>
-                <li><a href="http://jakecrane.com/jakeCombobox/" target="preview">jakeCombobox</a></li>
-                <li><a href="http://jakecrane.com/jakeTabPanel/" target="preview">jakeTabPanel</a></li>
-            </ul>
-            <ul class="navPanel hidden-sm hidden-md hidden-lg hidden-xl">
-                <li><a href="http://jakecrane.com/LemonadeCalculator/">Lemonade Calculator</a></li>
-                <li><a href="http://jakecrane.com/PizzaCostCalculator/">Pizza Cost Calculator</a></li>
-                <li><a href="http://jakecrane.com/DragAndDrop/">Drag And Drop</a></li>
-                <li><a href="http://jakecrane.com/makeItRain/">Make it Rain</a></li>
-                <li><a href="http://jakecrane.com/Breakout/">Breakout</a></li>
-                <li><a href="http://jakecrane.com/jakeCombobox/">jakeCombobox</a></li>
-                <li><a href="http://jakecrane.com/jakeTabPanel/">jakeTabPanel</a></li>
-            </ul>
+            <div id="sourceCode">
+                <h3>Source Code</h3>
+                <ul class="navPanel">
+                    <li><a href="https://github.com/jake-crane?tab=repositories">My Github Projects</a></li>
+                    <li><a href="https://bitbucket.org/jake_crane">My Bitbucket Projects</a></li>
+                </ul>
+            </div>
+            <div id="liveExamples">
+                <h3>Live Examples</h3>
+                <ul class="navPanel">
+                    <li><a href="http://jakecrane.com/LemonadeCalculator/">Lemonade Calculator</a></li>
+                    <li><a href="http://jakecrane.com/PizzaCostCalculator/">Pizza Cost Calculator</a></li>
+                    <li><a href="http://jakecrane.com/DragAndDrop/">Drag And Drop</a></li>
+                    <li><a href="http://jakecrane.com/makeItRain/">Make it Rain</a></li>
+                    <li><a href="http://jakecrane.com/Breakout/">Breakout</a></li>
+                    <li><a href="http://jakecrane.com/jakeCombobox/">jakeCombobox</a></li>
+                    <li><a href="http://jakecrane.com/jakeTabPanel/">jakeTabPanel</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="col-sm-9 hidden-xs">
             <h3>Live Example Preview</h3>
             <div id="previewContainer">
-                <iframe id="preview" name="preview" src="http://jakecrane.com/LemonadeCalculator/" hidden></iframe>
+                <iframe id="preview" name="preview" src="http://jakecrane.com/LemonadeCalculator/"></iframe>
             </div>
         </div>
     </div>
