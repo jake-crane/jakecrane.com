@@ -44,15 +44,20 @@ ul.navPanel li {
     height: 100%;
     width: 100%;
 	border-style: ridge;
-	opacity: 0;
 }
 
 #previewContainer {
     width: 100%;
     max-width: 650px;
     height: 420px;
+	opacity: 0;
 }
 
 .jakeHidden {
 	display: none;
+}
+
+a {
+	/*Remove focus rect in ie*/
+	outline: none !important;
 }

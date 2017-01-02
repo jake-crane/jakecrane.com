@@ -52,7 +52,7 @@ $(function () {
     $previewContainer.resizable();
 
     function hideIframe(duration) {
-        TweenMax.to($iframe, duration, {opacity: 0, scale: 0});
+        TweenMax.to($previewContainer, duration, {opacity: 0, scale: 0});
     }
 
     $liveExampleLinks.click(function () {
@@ -61,7 +61,7 @@ $(function () {
     });
 
     $iframe.load(function () {
-        TweenMax.to($iframe, 1, {opacity: 1, scale: 1});
+        TweenMax.to($previewContainer, 1, {opacity: 1, scale: 1});
     });
     TweenMax.staggerFrom(sideNavLiSelector, .5, {x: -300, rotation: 90, scale: 2}, 0.1);
     TweenMax.staggerFrom($topNavBarLinks, 2, {x: 800, ease: Bounce.easeOut}, 0.1);
