@@ -52,3 +52,7 @@ ul.navPanel li {
     max-width: 650px;
     height: 420px;
 }
+
+.jakeHidden {
+	display: none;
+}
