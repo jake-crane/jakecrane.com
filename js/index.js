@@ -56,8 +56,11 @@ $(function () {
     }
 
     $liveExampleLinks.click(function () {
-        $(this).attr('target', $iframe.is(':visible') ? 'preview' : '');
+        const $this = $(this);
+        $this.attr('target', $iframe.is(':visible') ? 'preview' : '');
         hideIframe(.5);
+        $liveExampleLinks.removeClass('selectedPreview');
+        $this.addClass('selectedPreview');
     });
 
     $iframe.load(function () {

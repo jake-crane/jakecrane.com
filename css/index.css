@@ -61,3 +61,7 @@ a {
 	/*Remove focus rect in ie*/
 	outline: none !important;
 }
+
+.selectedPreview {
+	box-shadow: 1px 1px 7px 0 inset;
+}
