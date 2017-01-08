@@ -1,6 +1,5 @@
 body {
-	padding-top: 55px;
-	padding-left: 10px;
+	padding: 55px 10px 10px 10px;
 }
 
 .starter-template {
@@ -40,10 +39,13 @@ ul.navPanel li {
 	text-align: center;
 }
 
+iframe {
+    border-style: ridge;
+}
+
 #preview {
     height: 100%;
     width: 100%;
-	border-style: ridge;
 }
 
 #previewContainer {
@@ -64,4 +66,25 @@ a {
 
 .selectedPreview {
 	box-shadow: 1px 1px 7px 0 inset;
+}
+
+@media screen and (max-width: 767px) {
+    .selectedPreview {
+        box-shadow: none;
+    }
+}
+html, body, #about {
+    height:100%;
+}
+
+#about {
+    padding-top: 5px;
+    text-align: center;
+}
+
+#resume {
+    width:100%;
+    max-width: 816px;
+    height:100%;
+    max-height: 960px;
 }
