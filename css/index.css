@@ -30,8 +30,7 @@ ul.navPanel li:first-child a {
 }
 
 ul.navPanel li a:hover {
-	background-color: #555;
-	color: white;
+	font-weight: bolder;
 	text-decoration: none;
 }
 
@@ -64,13 +63,15 @@ a {
 	outline: none !important;
 }
 
-.selectedPreview {
-	box-shadow: 1px 1px 7px 0 inset;
+ul.navPanel li a.selectedPreview {
+	background-color: #555;
+	color: white;
 }
 
 @media screen and (max-width: 767px) {
-    .selectedPreview {
-        box-shadow: none;
+    ul.navPanel li a.selectedPreview {
+        background-color: #f1f1f1;
+		color: black;
     }
 }
 html, body, #about {

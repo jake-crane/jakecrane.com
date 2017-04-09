@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jake Crane</title>
-    <link rel="stylesheet" href="./css/index.css"/>
-    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css" />
     <link rel="stylesheet" href="css/thirdParty/jquery-ui.css">
     <script src="js/thirdParty/jquery.min.js"></script>
     <script src="js/thirdParty/bootstrap.min.js"></script>
@@ -16,70 +17,69 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                     aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span> <span
                     class="icon-bar"></span> <span class="icon-bar"></span> <span
                     class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=".">Jake Crane</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul id="headerList" class="nav navbar-nav">
-                <li class="active"><a id="homeLink" href="#">Home</a></li>
-                <li><a id="aboutLink" href="#">About</a></li>
-                <li><a id="contactLink" href="#">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-<div id="home" class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-3 sidenav">
-            <div>
-                <h3>External Links</h3>
-                <ul class="navPanel">
-                    <li><a href="https://www.linkedin.com/in/jakecrane">My LinkedIn Profile</a></li>
-                    <li><a href="https://github.com/jake-crane?tab=repositories">My Github Projects</a></li>
-                    <li><a href="https://bitbucket.org/jake_crane">My Bitbucket Projects</a></li>
-                </ul>
+                <a class="navbar-brand" href=".">Jake Crane</a>
             </div>
-            <div id="liveExamples">
-                <h3>Live Examples</h3>
-                <ul class="navPanel">
-                    <li><a class="selectedPreview" href="http://jakecrane.com/LemonadeCalculator/">Lemonade Calculator</a></li>
-                    <li><a href="http://jakecrane.com/PizzaCostCalculator/">Pizza Cost Calculator</a></li>
-                    <li><a href="http://jakecrane.com/DragAndDrop/">Drag And Drop</a></li>
-                    <li><a href="http://jakecrane.com/makeItRain/">Make it Rain</a></li>
-                    <li><a href="http://jakecrane.com/Breakout/">Breakout</a></li>
-                    <li><a href="http://jakecrane.com/jakeCombobox/">jakeCombobox</a></li>
-                    <li><a href="http://jakecrane.com/jakeTabPanel/">jakeTabPanel</a></li>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul id="headerList" class="nav navbar-nav">
+                    <li class="active"><a id="homeLink" href="#">Home</a></li>
+                    <li><a id="aboutLink" href="#">About</a></li>
+                    <li><a id="contactLink" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="col-sm-9 hidden-xs">
-            <h3>Live Example Preview</h3>
-            <div id="previewContainer">
-                <iframe id="preview" name="preview" src="http://jakecrane.com/LemonadeCalculator/"></iframe>
+
+    <div id="home" class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <div>
+                    <h3>External Links</h3>
+                    <ul class="navPanel">
+                        <li><a href="https://www.linkedin.com/in/jakecrane">My LinkedIn Profile</a></li>
+                        <li><a href="https://github.com/jake-crane?tab=repositories">My Github Projects</a></li>
+                        <li><a href="https://bitbucket.org/jake_crane">My Bitbucket Projects</a></li>
+                    </ul>
+                </div>
+                <div id="liveExamples">
+                    <h3>Live Examples</h3>
+                    <ul class="navPanel">
+                        <li><a class="selectedPreview" href="http://jakecrane.com/LemonadeCalculator/">Lemonade Calculator</a></li>
+                        <li><a href="http://jakecrane.com/PizzaCostCalculator/">Pizza Cost Calculator</a></li>
+                        <li><a href="http://jakecrane.com/DragAndDrop/">Drag And Drop</a></li>
+                        <li><a href="http://jakecrane.com/makeItRain/">Make it Rain</a></li>
+                        <li><a href="http://jakecrane.com/Breakout/">Breakout</a></li>
+                        <li><a href="http://jakecrane.com/jakeCombobox/">jakeCombobox</a></li>
+                        <li><a href="http://jakecrane.com/jakeTabPanel/">jakeTabPanel</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-9 hidden-xs">
+                <h3>Live Example Preview</h3>
+                <div id="previewContainer">
+                    <iframe id="preview" name="preview" src="http://jakecrane.com/LemonadeCalculator/"></iframe>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="about" class=" jakeHidden">
-    <iframe id="resume" src="https://docs.google.com/document/d/1adyb4Q1ufQr9OTycIAWiSSJ-kdxUlPoPWdD_xKFMx-4/pub?embedded=true"></iframe>
-</div>
+    <div id="about" class=" jakeHidden">
+        <iframe id="resume" src="https://docs.google.com/document/d/1adyb4Q1ufQr9OTycIAWiSSJ-kdxUlPoPWdD_xKFMx-4/pub?embedded=true"></iframe>
+    </div>
 
-<div id="contact" class="jakeHidden">
-    <span>Email: contact<span>@</span>jakecrane<span>.</span>com</span>
-</div>
+    <div id="contact" class="jakeHidden">
+        <span>Email: <a href="mailto:contact@jakecrane.com">contact@jakecrane.com</a></span>
+    </div>
 
 </body>
 
