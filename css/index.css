@@ -74,18 +74,6 @@ ul.navPanel li a.selectedPreview {
 		color: black;
     }
 }
-html, body, #about {
+html, body {
     height:100%;
-}
-
-#about {
-    padding-top: 5px;
-    text-align: center;
-}
-
-#resume {
-    width:100%;
-    max-width: 816px;
-    height:100%;
-    max-height: 960px;
 }

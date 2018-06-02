@@ -5,14 +5,12 @@ $(function () {
     const $iframe = $('#preview');
     const $topNavBarLinks = $('.navbar-fixed-top').find('a');
     const $home = $('#home');
-    const $about = $('#about');
     const $contact = $('#contact');
     const $headerList = $('#headerList');
     const $homeLink = $('#homeLink');
-    const $aboutLink = $('#aboutLink');
     const $contactLink = $('#contactLink');
     const $navBarToggle = $('button.navbar-toggle');
-    const $contentPanes = $($home).add($about).add($contact);
+    const $contentPanes = $($home).add($contact);
 
     function toggleContent($elementToShow) {
         $contentPanes.addClass('jakeHidden');
@@ -29,10 +27,6 @@ $(function () {
 
     $homeLink.click(function () {
         transition($home);
-    });
-
-    $aboutLink.click(function () {
-        transition($about);
     });
 
     $contactLink.click(function () {
